@@ -1,3 +1,17 @@
-<button (click)="requestPermission()">
-  Hello this is a chat app. You should let us send you notifications for this reason.
-</button>
+<div class="container mt-4 text-center">
+
+  <div class="w-50 m-auto p-4 containerc alert-warning rounded-pill border-warning border">
+    <h1>Push Notifications App</h1>
+
+    <p>Hello this is a chat app. You should let us send you notifications for this reason.</p>
+  
+    <button class="btn btn-primary m-auto" *ngIf="object.to==''" (click)="requestPermission()">
+      Suscríbete
+    </button>
+    <button class="btn btn-success m-auto" *ngIf="object.to!=''" (click)="sendPush()">
+      Send Push
+    </button>
+  </div>
+
+  
+</div>
