@@ -23,7 +23,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/firebase-messaging-sw.js",
-    "src/manifest.json" 
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css"
@@ -122,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SimplyNotify"
+    }
+  },
+  "defaultProject": "SimplyNotify",
+  "cli": {
+    "analytics": false
+  }
 }
