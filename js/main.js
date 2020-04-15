@@ -34,6 +34,7 @@ sendNotificationForm.addEventListener("submit", sendNotification);
 function handleAuthStateChanged(user) {
   if (user) {
     // User is signed in
+    console.log(user);
     signInButton.setAttribute("hidden", "true");
     signOutButton.removeAttribute("hidden");
     sendNotificationForm.removeAttribute("hidden");

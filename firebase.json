@@ -6,8 +6,9 @@
     "public": ".",
     "ignore": [
       "firebase.json",
-      "database-rules.json",
-      "functions"
+      "**/.*",
+      "**/node_modules/**"
     ]
   }
+
 }
